@@ -51,11 +51,11 @@ export default function Faqs1() {
                 <div className="mt-20">
                   <Link
                     className="btn btn-brand-1-big mr-20 wow animate__animated animate__fadeIn"
-                    href="/contact"
+                    href="/#contact"
                   >
                     Contact Us
                   </Link>
-                  <Link
+                  {/* <Link
                     className="btn btn-link-medium wow animate__animated animate__fadeIn"
                     href="#"
                   >
@@ -74,7 +74,7 @@ export default function Faqs1() {
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       />
                     </svg>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>

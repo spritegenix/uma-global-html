@@ -61,11 +61,11 @@ export default function Services1() {
                       Speed and security for international and domestic
                       shipments, with priority and express options.
                     </p>
-                    <div className="box-button-offer mb-30">
+                    {/* <div className="box-button-offer mb-30">
                       <a className="btn btn-link font-sm color-brand-2">
                         View Details
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -87,11 +87,11 @@ export default function Services1() {
                       Cost-effective, large-scale cargo movement across the
                       country with safe and efficient rail logistics.
                     </p>
-                    <div className="box-button-offer mb-30">
+                    {/* <div className="box-button-offer mb-30">
                       <a className="btn btn-link font-sm color-brand-2">
                         View Details
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -113,11 +113,11 @@ export default function Services1() {
                       Seamless integration of Air, Rail, and Road for optimized
                       shipping and logistics solutions.
                     </p>
-                    <div className="box-button-offer mb-30">
+                    {/* <div className="box-button-offer mb-30">
                       <a className="btn btn-link font-sm color-brand-2">
                         View Details
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

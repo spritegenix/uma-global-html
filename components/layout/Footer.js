@@ -7,7 +7,7 @@ export default function Footer1({}) {
         <div className="footer-1">
           <div className="container">
             <div className="row">
-              <div className="col-lg-3 width-23 mb-30">
+              <div className="col-lg-3 width-25 mb-30">
                 <div className="mb-20">
                   <img
                     src="/assets/imgs/template/logo-footer.svg"
@@ -34,27 +34,24 @@ export default function Footer1({}) {
                   <Link className="icon-socials icon-linkedin" href="#" />
                 </div>
               </div>
-              <div className="col-lg-3 width-16 mb-30">
+              <div className="col-lg-3 width-25 mb-30">
                 <h5 className="mb-10 color-brand-1">Company</h5>
                 <ul className="menu-footer">
                   <li>
-                    <Link href="/about">About Us</Link>
+                    <Link href="/#Delivering">About Us</Link>
                   </li>
                   <li>
-                    <Link href="/team">Our Leadership</Link>
+                    <Link href="/#services">Services</Link>
                   </li>
                   <li>
-                    <Link href="/career">Careers</Link>
+                    <Link href="/blog">Blog</Link>
                   </li>
                   <li>
-                    <Link href="#">Press & Media</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Client Testimonials</Link>
+                    <Link href="/#contact">Contact</Link>
                   </li>
                 </ul>
               </div>
-              <div className="col-lg-3 width-16 mb-30">
+              {/* <div className="col-lg-3 width-16 mb-30">
                 <h5 className="mb-10 color-brand-1">Industries</h5>
                 <ul className="menu-footer">
                   <li>
@@ -76,20 +73,20 @@ export default function Footer1({}) {
                     <Link href="#">Warehousing & Fulfillment</Link>
                   </li>
                 </ul>
-              </div>
-              <div className="col-lg-3 width-16 mb-30">
+              </div> */}
+              <div className="col-lg-3 width-25 mb-30">
                 <h5 className="mb-10 color-brand-1">Services</h5>
                 <ul className="menu-footer">
                   <li>
                     <Link href="#">Air Freight</Link>
                   </li>
                   <li>
-                    <Link href="#">Ocean Freight</Link>
+                    <Link href="#">Rail Freight</Link>
                   </li>
                   <li>
-                    <Link href="#">Railway & Road Transport</Link>
+                    <Link href="#">Multimodal Transport</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="#">Warehousing & Distribution</Link>
                   </li>
                   <li>
@@ -97,10 +94,10 @@ export default function Footer1({}) {
                   </li>
                   <li>
                     <Link href="#">Last-Mile Delivery</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
-              <div className="col-lg-3 width-20 mb-30">
+              <div className="col-lg-3 width-25 mb-30">
                 <h5 className="mb-10 color-brand-1">Our Work</h5>
                 <div className="galleries-footer">
                   <ul className="list-imgs">

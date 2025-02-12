@@ -37,10 +37,7 @@ export default function Header({ topBarStyle, handleMobileMenuOpen }) {
                   </svg>
                   Phone: +01-246-357 (Any time 24/7)
                 </Link>
-                <Link
-                  className="email-icon"
-                  href="mailto:contact@transp.eu.com"
-                >
+                <Link className="email-icon" href="mailto:info@uma.com">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -168,7 +165,7 @@ export default function Header({ topBarStyle, handleMobileMenuOpen }) {
                   </Link> */}
                   <Link
                     className="btn btn-brand-1 d-none d-xl-inline-block hover-up"
-                    href="/request-a-quote"
+                    href="/#contact"
                   >
                     <svg
                       fill="none"
