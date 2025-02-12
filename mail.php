@@ -12,18 +12,18 @@ $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $firstname = strip_tags(trim($_POST["firstname"]));
-    $firstname = str_replace(array("\r", "\n"), array(" ", " "), $firstname);
-    $lastname = strip_tags(trim($_POST["lastname"]));
-    $lastname = str_replace(array("\r", "\n"), array(" ", " "), $lastname);
+    $name = strip_tags(trim($_POST["name"]));
+    $name = str_replace(array("\r", "\n"), array(" ", " "), $name);
+    // $lastname = strip_tags(trim($_POST["lastname"]));
+    // $lastname = str_replace(array("\r", "\n"), array(" ", " "), $lastname);
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $website = isset($_POST["website"]) && !empty(trim($_POST["website"])) ? trim($_POST["website"]) : "";
     $subject = isset($_POST["subject"]) && !empty(trim($_POST["subject"])) ? trim($_POST["subject"]) : "";
     $message = trim($_POST["message"]);
-    $mobile = trim($_POST["mblno"]);
+    $mobile = trim($_POST["phone"]);
 
     // Validate fields
-    if (empty($firstname) || empty($mobile)   || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (empty($name) || empty($mobile)   || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         http_response_code(400);
         echo "Please complete the form and try again.";
         exit;
@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mail->setFrom($_ENV['SMTP_FROM_EMAIL'], $_ENV['SMTP_FROM_NAME']);
         $mail->addAddress($_ENV['SMTP_FROM_EMAIL'], 'Admin');
-        $mail->addReplyTo($email, $firstname);
+        $mail->addReplyTo($email, $name);
         $mail->Subject = $subject;
         $mail->Body = '<html>
         <head>
@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </head>
         <body>
             <div class="container">
-                <p><span class="label">Name:</span> <span class="value">' . $firstname . ' ' . $lastname . '</span></p>
+                <p><span class="label">Name:</span> <span class="value">' . $name  . '</span></p>
                 <p><span class="label">Email:</span> <span class="value">' . $email . '</span></p>
                 <p><span class="label">Mobile:</span> <span class="value">' . $mobile . '</span></p>
                 <p><span class="label">Subject:</span> <span class="value">' . $subject . '</span></p>
