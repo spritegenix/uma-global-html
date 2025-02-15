@@ -26,6 +26,10 @@ TABLE CONTENT
  WP STYPE
  Custom amine
 ***/
+html {
+  scroll-behavior: smooth !important;
+}
+
 @import url(https://fonts.bunny.net/css?family=epilogue:400,500,600,700);
 /*import vendors*/
 @import url(../css/vendors/normalize.css);
